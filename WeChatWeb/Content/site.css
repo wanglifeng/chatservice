@@ -1,0 +1,8 @@
+﻿#menuButton {
+    display:inline;
+    left: 6px;
+    right: auto;
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 8px 0 14px;
+}

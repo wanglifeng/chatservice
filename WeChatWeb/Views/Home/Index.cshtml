@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
+
+
+<div class="toolbar">
+    <h1 id="pageTitle">首页</h1>
+</div>
+
+<div id="home" class="panel" selected="true">
+    <h2>正在热招的公司</h2>
+    <ul>
+        <li>@Html.ActionLink("公司列表", "List", "Company", null, new { target = "_self" })</li>
+        <li>@Html.ActionLink("我已关注的公司", "List", "Company")</li>
+    </ul>
+    <h2>我的求职状态</h2>
+    <ul>
+        <li>@Html.ActionLink("未投简历", "List", "Company")</li>
+        <li>@Html.ActionLink("已投简历", "List", "Company")</li>
+        <li>@Html.ActionLink("面试通知", "List", "Company")</li>
+        <li>@Html.ActionLink("已发Offer公司", "List", "Company")</li>
+    </ul>
+</div>
