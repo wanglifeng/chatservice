@@ -129,11 +129,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CompaniesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\iui\imgs\shade-compact.gif" />
     <Content Include="Content\iui\iui-panel-list.css" />
     <Content Include="Content\iui\iui.css" />
+    <Content Include="Content\iui\list.css" />
     <Content Include="Content\iui\t\default\back-img.png" />
     <Content Include="Content\iui\t\default\backButton.png" />
     <Content Include="Content\iui\t\default\backButtonBack.png" />
@@ -174,7 +177,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
