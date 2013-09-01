@@ -1,17 +1,17 @@
 ﻿@model IList<WeChatWeb.Models.CompaniesListModel>
 @{
     ViewBag.Title = "公司列表";
-        Layout = "~/Views/Shared/_MobileLayout.cshtml";
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
 }
 @section Css
 {
     <link rel="stylesheet" href="@Url.Content("~/Content/iui/list.css")" type="text/css" />
 }
 
-    <div class="toolbar">
-        <h1 id="pageTitle">公司列表</h1>
-        <a id="menuButton" class="button" href="/" style="display: inline" target="_self">返回首页</a>
-    </div>
+<div class="toolbar">
+    <h1 id="pageTitle">公司列表</h1>
+    <a id="menuButton" class="button" href="/" style="display: inline" target="_self">返回首页</a>
+</div>
 
 
 <ul id="home" selected="true">
@@ -22,7 +22,7 @@
             @Html.ActionLink(t.Name, "Detail", "Company", null, new { target = "_self" })
         </li>
     }
-    <li>@Html.ActionLink("加载更多", "List", "Company", new { page = ViewBag.CurrentPage + 1}, new { target = "_self" }) </li>
+    <li>@Html.ActionLink("加载更多", "List", "Company", new { page = ViewBag.CurrentPage + 1 }, new { target = "_self" }) </li>
 
 
 </ul>
